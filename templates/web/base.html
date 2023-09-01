@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Thememarch" />
+    <!-- Favicon Icon -->
+    <link rel="icon" href="{% static 'web/img/favicon.svg' %}" />
+    <!-- Site Title -->
+    <title>Vixan - Creative Agency Template</title>
+    <link rel="stylesheet" href="{% static 'web/css/plugins/bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'web/css/plugins/lightgallery.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'web/css/plugins/swiper.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}" />
+</head>
+
+<body>
+    <div class="cs_cursor_1"></div>
+    <div class="cs_cursor_2"></div>
+
+    {% include 'web/partials/header.html' %}
+    {% block content %}
+    {% endblock content %}
+    {% include 'web/partials/footer.html' %}
+
+    <script src="{% static 'web/js/plugins/jquery-3.7.0.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/isotope.pkg.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/swiper.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/lightgallery.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/gsap.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/ScrollToPlugin.min.js' %}"></script>
+    <script src="{% static 'web/js/plugins/SplitText.min.js' %}"></script>
+    <script src="{% static 'web/js/main.js' %}"></script>
+
+</body>
+
+</html>
